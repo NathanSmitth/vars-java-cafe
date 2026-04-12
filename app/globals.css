@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-espresso: #2c1a0d;
+  --color-cream: #faf7f0;
+  --color-parchment: #ece4d7;
+  --color-sage: #4a7859;
+  --color-gold: #b8882e;
+  --color-warm: #7a6456;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  background-color: var(--color-cream);
+  color: var(--color-espresso);
+  font-family: var(--font-body), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-cream);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-parchment);
+  border-radius: 0;
+}
+
+/* Marquee pause on hover */
+.marquee-track:hover .marquee-inner {
+  animation-play-state: paused;
+}
+
+/* Gallery scroll reveal */
+.gallery-item {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.gallery-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Tab animated indicator */
+.tab-indicator {
+  transition: left 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+              width 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Selection style */
+::selection {
+  background-color: var(--color-parchment);
+  color: var(--color-espresso);
+}
