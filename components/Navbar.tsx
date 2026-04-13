@@ -4,6 +4,7 @@
 
 import React from 'react'
 import Link from 'next/link'
+import { FaFacebook, FaInstagram } from 'react-icons/fa'
 import { useScroll } from '@/hooks/use-scroll'
 import { cn } from '@/lib/utils'
 
@@ -53,6 +54,26 @@ export default function Navbar() {
               {label}
             </Link>
           ))}
+          <div className="flex items-center gap-3">
+            <a
+              href="https://www.facebook.com/p/VarsJava-Cafe-61574991025632/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+              className="text-espresso/40 hover:text-espresso transition-colors duration-200"
+            >
+              <FaFacebook className="w-3.5 h-3.5" />
+            </a>
+            <a
+              href="https://www.instagram.com/varsjavacafe/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              className="text-espresso/40 hover:text-espresso transition-colors duration-200"
+            >
+              <FaInstagram className="w-3.5 h-3.5" />
+            </a>
+          </div>
           <Link
             href="#visit"
             className="font-body text-xs tracking-[0.15em] uppercase bg-espresso text-cream px-6 py-3 hover:bg-espresso-light transition-colors duration-200"

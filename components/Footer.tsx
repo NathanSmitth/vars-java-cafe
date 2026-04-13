@@ -3,7 +3,7 @@
 
 import Link from 'next/link'
 import { MapPin, Clock } from 'lucide-react'
-import { FaFacebook, FaInstagram } from 'react-icons/fa'
+
 
 const hours = [
   { days: 'Monday – Friday', hours: '7:00 AM – 5:00 PM' },
@@ -116,26 +116,9 @@ export default function Footer() {
           <p className="font-body text-xs text-cream/25">
             © {new Date().getFullYear()} Vars &amp; Java Café. All rights reserved.
           </p>
-          <div className="flex items-center gap-4">
-            <a
-              href="https://www.facebook.com/p/VarsJava-Cafe-61574991025632/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Vars & Java Café on Facebook"
-              className="text-cream/30 hover:text-cream transition-colors duration-200"
-            >
-              <FaFacebook className="w-4 h-4" />
-            </a>
-            <a
-              href="https://www.instagram.com/varsjavacafe/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Vars & Java Café on Instagram"
-              className="text-cream/30 hover:text-cream transition-colors duration-200"
-            >
-              <FaInstagram className="w-4 h-4" />
-            </a>
-          </div>
+          <p className="font-body text-xs text-cream/20">
+            Fredericton, New Brunswick, Canada
+          </p>
         </div>
       </div>
 
