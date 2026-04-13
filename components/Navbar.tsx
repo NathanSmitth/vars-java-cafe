@@ -60,7 +60,7 @@ export default function Navbar() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Facebook"
-              className="text-espresso/40 hover:text-espresso transition-colors duration-200"
+              className="text-espresso/70 hover:text-espresso transition-colors duration-200"
             >
               <FaFacebook className="w-3.5 h-3.5" />
             </a>
@@ -69,7 +69,7 @@ export default function Navbar() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
-              className="text-espresso/40 hover:text-espresso transition-colors duration-200"
+              className="text-espresso/70 hover:text-espresso transition-colors duration-200"
             >
               <FaInstagram className="w-3.5 h-3.5" />
             </a>
